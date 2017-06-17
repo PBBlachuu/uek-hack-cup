@@ -41,7 +41,7 @@ $padding: 4%
             height: $top_panel_height
             float: right
     >.s_image
-        height: 400px + $top_panel_height
+        height: 400px
         width: 61.12vw
         background-image: url('../images/img1.jpg')
         background-size: 70vw
@@ -55,11 +55,11 @@ $padding: 4%
         >.s_title
             background-color: #fff
             width: 100%
-            padding: 20px $padding 0px
+            padding: 60px $padding 0px
             >h1
-                font-weight: 300
+                font-weight: 600
                 text-transform: uppercase
-                font-size: 5rem
+                font-size: 6rem
                 width: 100%
                 padding-bottom: 5px
                 border-bottom: 1px solid rgba(0,0,0,0.1)
@@ -67,7 +67,7 @@ $padding: 4%
         >.s_tags
             width: 100%
             padding: 20px $padding 10px
-            background-color: rgba(255,255,255,0.85)
+            background-color: rgba(255,255,255,0.95)
             >ul
                 display: inline-block
                 width: 100%
@@ -153,5 +153,32 @@ $padding: 4%
                             font-size: 1.2rem
                             top: -2px
         >.s_description
-            padding: 40px $padding 40px
+            padding: 60px $padding 60px
             background-color: rgba(255,255,255,0.95)
+            >p
+                margin-top: 20px
+                line-height: 1.5
+                column-count: 2
+                column-gap: 40px
+                font-family: $font_text
+                font-size: 1.4rem
+        >.s_ticket
+            height: 80px
+            background-color: rgba(200,200,200,0.5)
+            display: flex
+            justify-content: space-between
+            padding: 0px $padding
+            align-items: center
+            &:after
+                content: ""
+                display: inline-block
+                width: 70%
+                height: 80px
+                position: absolute
+                left: 0px
+                background-color: $color
+            >button
+                z-index: 5
+                border: 1px solid #fff
+                background-size: transparent
+                
