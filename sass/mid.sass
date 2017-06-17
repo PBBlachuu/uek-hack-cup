@@ -1,0 +1,87 @@
+$padding: 10%
+$li_height: 100px
+
+#panel_two
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.7)
+    >#search
+        z-index: 1
+        height: $top_panel_height
+        background-color: #ebebeb
+        //box-shadow: 0 0 5px 3px rgba(0,0,0,0.1)
+        border-bottom: 1px solid rgba(0,0,0,0.1)
+        position: fixed
+        width: 27.78vw
+        left: 11.12vw
+    >#event_list
+        padding-top: $top_panel_height
+        >ul
+            display: inline-block
+            padding: 0px $padding
+            width: 100%
+            >h2
+                width: 100%
+                text-transform: uppercase
+                font-size: 1.2rem
+                font-weight: 600
+                padding-bottom: 5px
+                margin-bottom: 20px
+                margin-top: 30px
+                border-bottom: 1px solid rgba(0,0,0,0.1)
+                color: rgba(0,0,0,0.4)
+            >li
+                width: 100%
+                background-color: #fff
+                height: $li_height
+                margin-bottom: 20px
+                border-radius: 10px
+                overflow: hidden
+                box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1)
+                cursor: pointer
+                transition: all ease-in-out 0.2s
+                overflow: hidden
+                &.active
+                    box-shadow: 0 0px 0px 1px rgba(0,0,0,0.1)
+                    background-color: rgba(0,0,0,0.025)
+                    &:hover
+                        transform: scale(1)
+                    >div:nth-child(2)
+                        >h1
+                            font-weight: 500
+                &:hover
+                    transform: scale(1.06)
+                >div:nth-child(1)
+                    width: 25%
+                    float: left
+                    border-right: 1px solid rgba(0,0,0,0.1)
+                    height: $li_height
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    >span
+                        font-size: 1.8rem
+                        font-weight: 600
+                        color: rgba(0,0,0,0.8)
+                >div:nth-child(2)
+                    width: 75%
+                    float: left
+                    height: $li_height
+                    display: flex
+                    flex-direction: column
+                    padding: 10px
+                    justify-content: space-around
+                    >h1
+                        font-size: 1.8rem
+                        font-weight: 300
+                        padding-bottom: 10px
+                    >ul
+                        display: inline-block
+                        width: 100%
+                        overflow: hidden
+                        >li
+                            float: left
+                            padding: 3px 10px
+                            font-size: 1rem
+                            margin: 0 5px 2px 0
+                            border: 1px solid rgba(0,0,0,0.1)
+                            border-radius: 20px
+                            

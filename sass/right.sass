@@ -1,0 +1,97 @@
+$color: #320553
+$color_c: #fff
+$padding: 4%
+
+#panel_three
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.15)
+    >.s_top
+        height: $top_panel_height
+        background-color: $color
+        z-index: 4
+        border-bottom: 1px solid rgba(0,0,0,0.2)
+        position: fixed
+        width: 61.12vw
+        //box-shadow: 0 0 3px 2px rgba(0,0,0,0.25)
+        border-bottom: 1px solid rgba(0,0,0,0.1)
+        >h1
+            display: inline-block
+            height: $top_panel_height
+            float: left
+            padding: 0 2.5%
+            font-size: 1.2rem
+            color: $color_c 
+            display: flex
+            align-content: center
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            font-weight: 500
+            text-transform: uppercase
+        >ul
+            display: inline-block
+            height: $top_panel_height
+            float: right
+    >.s_image
+        height: 400px + $top_panel_height
+        width: 61.12vw
+        background-image: url('../images/img1.jpg')
+        background-size: 70vw
+        background-position: center
+        position: fixed
+        top: 0
+    >.soover
+        z-index: 3
+        padding-top: 400px
+        padding-bottom: 2000px
+        >.s_title
+            background-color: #fff
+            width: 100%
+            padding: 20px $padding 0px
+            >h1
+                font-weight: 300
+                text-transform: uppercase
+                font-size: 5rem
+                width: 100%
+                padding-bottom: 5px
+                border-bottom: 1px solid rgba(0,0,0,0.1)
+                color: $color
+        >.s_tags
+            width: 100%
+            padding: 20px $padding 10px
+            background-color: rgba(255,255,255,0.9)
+            >ul
+                display: inline-block
+                width: 100%
+                overflow: hidden
+                >li
+                    display: inline-block
+                    float: left
+                    padding: 5px 10px
+                    font-size: 1rem
+                    font-weight: 500
+                    text-transform: uppercase
+                    border: 1px solid rgba(0,0,0,0.3)
+                    border-radius: 50px
+                    margin-right: 10px
+                    margin-bottom: 10px
+                    cursor: pointer
+                    transition: all ease-in-out 0.3s
+                    &:hover
+                        background-color: $color
+                        border-color: $color
+                        color: $color_c
+        >.s_info
+            width: 100%
+            padding: 20px $padding 20px
+            background-color: rgba(255,255,255,1)
+            overflow: hidden
+            >.s_info_timer
+                float: right
+                width: 35%
+                height: 200px
+                background-color: $color
+                border-radius: 20px
+            >.s_info_list
+                float: left
+                width: 65%
+                padding-right: 30px
