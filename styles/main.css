@@ -114,6 +114,14 @@
 
 #panel_three {
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.15); }
+  #panel_three div > h1 {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: 300; }
   #panel_three > .s_top {
     height: 60px;
     background-color: #320553;
@@ -177,7 +185,7 @@
     #panel_three > .soover > .s_tags {
       width: 100%;
       padding: 20px 4% 10px;
-      background-color: rgba(255, 255, 255, 0.9); }
+      background-color: rgba(255, 255, 255, 0.85); }
       #panel_three > .soover > .s_tags > ul {
         display: inline-block;
         width: 100%;
@@ -202,19 +210,78 @@
             color: #fff; }
     #panel_three > .soover > .s_info {
       width: 100%;
-      padding: 20px 4% 20px;
+      padding: 40px 4% 40px;
       background-color: white;
       overflow: hidden; }
       #panel_three > .soover > .s_info > .s_info_timer {
         float: right;
         width: 35%;
         height: 200px;
-        background-color: #320553;
+        background-color: rgba(0, 0, 0, 0.025);
+        border: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 20px; }
+        #panel_three > .soover > .s_info > .s_info_timer > span {
+          display: inline-block;
+          height: 75px;
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          font-size: 3rem;
+          font-weight: 600;
+          color: #320553; }
+          #panel_three > .soover > .s_info > .s_info_timer > span:nth-child(1) {
+            font-size: 5.5rem;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            height: 100px; }
+          #panel_three > .soover > .s_info > .s_info_timer > span:nth-child(2) {
+            font-size: 2rem;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            height: 50px; }
+        #panel_three > .soover > .s_info > .s_info_timer > h2 {
+          text-transform: uppercase;
+          width: 100%;
+          color: rgba(0, 0, 0, 0.4);
+          font-size: 1.4rem;
+          font-weight: 700;
+          text-align: center; }
       #panel_three > .soover > .s_info > .s_info_list {
         float: left;
         width: 65%;
-        padding-right: 30px; }
+        padding-right: 50px; }
+        #panel_three > .soover > .s_info > .s_info_list > ul {
+          display: inline-block;
+          width: 100%;
+          margin-top: 10px; }
+          #panel_three > .soover > .s_info > .s_info_list > ul > li {
+            display: inline-block;
+            width: 100%;
+            padding: 8px 0; }
+            #panel_three > .soover > .s_info > .s_info_list > ul > li > i {
+              color: #320553;
+              font-size: 1.5rem;
+              padding-right: 3px; }
+            #panel_three > .soover > .s_info > .s_info_list > ul > li > label {
+              text-transform: uppercase;
+              color: #320553;
+              font-size: 1.2rem;
+              top: -2px;
+              padding-right: 5px;
+              border-right: 1px solid #320553;
+              margin-right: 5px; }
+            #panel_three > .soover > .s_info > .s_info_list > ul > li > span {
+              font-size: 1.2rem;
+              top: -2px; }
+    #panel_three > .soover > .s_description {
+      padding: 40px 4% 40px;
+      background-color: rgba(255, 255, 255, 0.95); }
 
 body {
   width: 100vw;
