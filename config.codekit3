@@ -60,6 +60,12 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -160,6 +166,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/scripts\/countdown-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/map.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/map-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
