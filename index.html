@@ -10,7 +10,49 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i|Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="scripts/countdown.js"></script>
+
+        <style>
+
+        #panel_two {
+            overflow: scroll;
+        }
+        #panel_two::-webkit-scrollbar {
+            width: 0em;
+        }
+         
+        #panel_two::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+        }
+         
+        #panel_two::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          outline: 1px solid slategrey;
+        }
+
+        #panel_three {
+                    overflow: scroll;
+                }
+                #panel_three::-webkit-scrollbar {
+            width: 0em;
+        }
+         
+        #panel_three::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+        }
+         
+        #panel_three::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          outline: 1px solid slategrey;
+        }
+        </style>
+       
+
+        
+
+
     </head>
     <body>
         <div id="panel_one">
@@ -18,7 +60,7 @@
         </div>
         <div id="panel_two">
             <div id="search"></div>
-            <div id="event_list">
+            <div id="event_list" class="scrollbar-inner">
                 <ul>
                     <h2>Środa 12.07.2017</h2>
                     <li>
@@ -182,5 +224,6 @@ Andouille beef ribs fatback chuck shoulder, pig kielbasa tenderloin pork belly. 
                 </div>
             </div>
         </div>
+        
     </body>
 </html>
