@@ -4,12 +4,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>UEK Calendar</title>
+        <title>UEK Kalendarz</title>
         <meta name="description" content="">
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i|Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/countdown.js"></script>
     </head>
     <body>
         <div id="panel_one">
@@ -23,36 +24,31 @@
                     <li>
                         <div><span>12:45</span></div>
                         <div>
-                            <h1>Pionierzy Nauki</h1>
+                            <h1>Bezpieczna Uczelnia UEK</h1>
                             <ul>
-                                <li>Nauka</li>
-                                <li>Matematyka</li>
-                                <li>Fizyka</li>
-                                <li>Innowacje</li>
+                                <li>Uczelnia</li>
+                                <li>Inne</li>
                             </ul>
                         </div>
                     </li>
                     <li class="active">
                         <div><span>17:15</span></div>
                         <div>
-                            <h1>Urbanizacja Krakowa</h1>
+                            <h1>Urbanizacja Krakowa - konferencja</h1>
                             <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
+                                <li>Konferencja</li>
+                                <li>Architektura</li>
+                                <li>Miasto</li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div><span>20:00</span></div>
                         <div>
-                            <h1>Nazwa</h1>
+                            <h1>Business Speed Dating</h1>
                             <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
+                                <li>Rozrywka</li>
+                                <li>Ludzie</li>
                             </ul>
                         </div>
                     </li>
@@ -60,73 +56,30 @@
                     <li>
                         <div><span>10:45</span></div>
                         <div>
-                            <h1>Nazwa</h1>
+                            <h1>Praca zdalna - Debata Oxfordzka</h1>
                             <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
+                                <li>Debata</li>
+                                <li>Praca</li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div><span>15:30</span></div>
                         <div>
-                            <h1>Nazwa</h1>
+                            <h1>Zaangażowanie organizacyjne - aspekty psychospołeczne</h1>
                             <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>16:45</span></div>
-                        <div>
-                            <h1>Nazwa</h1>
-                            <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>21:00</span></div>
-                        <div>
-                            <h1>Nazwa</h1>
-                            <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
+                                <li>Konferencja</li>
                             </ul>
                         </div>
                     </li>
                     <h2>Piątek 14.07.2017</h2>
                     <li>
-                        <div><span>14:45</span></div>
+                        <div><span>08:00</span></div>
                         <div>
-                            <h1>Nazwa</h1>
+                            <h1>II Dydaktyczno-Naukowa Konferencja Plakatowa</h1>
                             <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div><span>18:15</span></div>
-                        <div>
-                            <h1>Nazwa</h1>
-                            <ul>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
-                                <li>tag1</li>
+                                <li>Konferencja</li>
+                                <li>Biznes</li>
                             </ul>
                         </div>
                     </li>
@@ -149,17 +102,15 @@
                 </div>
                 <div class="s_tags">
                     <ul>
-                        <li>architektura</li>
-                        <li>administracja</li>
-                        <li>sztuka</li>
-                        <li>inwestycje</li>
-                        <li>społeczeństwo</li>
+                        <li>Konferencja</li>
+                        <li>Architektura</li>
+                        <li>Miasto</li>
                     </ul>
                 </div>
                 <div class="s_info">
                     <div class="s_info_timer">
-                        <span>02 dni</span>
-                        <span>3h 27min. 46sek.</span>
+                        <span id="days-left">02 dni</span>
+                        <span id="time-left">3h 27min. 46sek.</span>
                         <h2>Pozostało do eventu</h2>
                     </div>
                     <div class="s_info_list">
