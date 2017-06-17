@@ -18,13 +18,31 @@
 #panel_two {
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.7); }
   #panel_two > #search {
+    padding: 20px 2.64%;
     z-index: 1;
     height: 60px;
     background-color: #ebebeb;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 27.78vw;
-    left: 11.12vw; }
+    left: 11.12vw;
+    overflow: hidden; }
+    #panel_two > #search > input {
+      background-color: #fff;
+      padding: 5px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      outline: none;
+      width: 85%;
+      float: left;
+      color: rgba(0, 0, 0, 0.7); }
+    #panel_two > #search > i {
+      float: left;
+      color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 2rem;
+      top: 1px; }
   #panel_two > #event_list {
     padding-top: 60px; }
     #panel_two > #event_list > ul {
@@ -54,13 +72,19 @@
         transition: all ease-in-out 0.2s;
         overflow: hidden; }
         #panel_two > #event_list > ul > li.active {
-          box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.1);
-          background-color: rgba(0, 0, 0, 0.025); }
+          height: 130px; }
           #panel_two > #event_list > ul > li.active:hover {
             -webkit-transform: scale(1);
                     transform: scale(1); }
-          #panel_two > #event_list > ul > li.active > div:nth-child(2) > h1 {
-            font-weight: 500; }
+          #panel_two > #event_list > ul > li.active > div:nth-child(1) {
+            height: 130px;
+            background-color: #320553; }
+            #panel_two > #event_list > ul > li.active > div:nth-child(1) > span {
+              color: #fff; }
+          #panel_two > #event_list > ul > li.active > div:nth-child(2) {
+            height: 130px; }
+            #panel_two > #event_list > ul > li.active > div:nth-child(2) > h1 {
+              font-weight: 500; }
         #panel_two > #event_list > ul > li:hover {
           -webkit-transform: scale(1.06);
                   transform: scale(1.06); }

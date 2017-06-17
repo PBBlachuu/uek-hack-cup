@@ -4,6 +4,7 @@ $li_height: 100px
 #panel_two
     box-shadow: 0 0 3px 2px rgba(0,0,0,0.7)
     >#search
+        padding: 20px 2.64%
         z-index: 1
         height: $top_panel_height
         background-color: #ebebeb
@@ -12,6 +13,23 @@ $li_height: 100px
         position: fixed
         width: 27.78vw
         left: 11.12vw
+        overflow: hidden
+        >input
+            background-color: #fff
+            padding: 5px 10px 
+            border: 1px solid rgba(0,0,0,0.1)
+            border-radius: 30px
+            outline: none
+            width: 85%
+            float: left
+            color: rgba(0,0,0,0.7)
+        >i
+            float: left
+            color: rgba(0,0,0,0.5)
+            cursor: pointer
+            margin-left: 10px
+            font-size: 2rem
+            top: 1px
     >#event_list
         padding-top: $top_panel_height
         >ul
@@ -40,11 +58,16 @@ $li_height: 100px
                 transition: all ease-in-out 0.2s
                 overflow: hidden
                 &.active
-                    box-shadow: 0 0px 0px 1px rgba(0,0,0,0.1)
-                    background-color: rgba(0,0,0,0.025)
+                    height: $li_height*1.3
                     &:hover
                         transform: scale(1)
+                    >div:nth-child(1)
+                        height: $li_height*1.3
+                        background-color: #320553
+                        >span
+                            color: #fff
                     >div:nth-child(2)
+                        height: $li_height*1.3
                         >h1
                             font-weight: 500
                 &:hover
